@@ -9,18 +9,50 @@
 </head>
 
 <body>
+    <h1>Form Pendaftaran SIB 2023</h1>
     <form>
         <label for="name">Nama Lengkap</label>
         <br />
-        <input type="text" name="name" id="name" placeholder="Nama Lengkap" />
+        <input type="text" name="name" id="name" placeholder="Masukan Nama Lengkap" />
         <br />
         <label for="email">Email</label>
         <br />
-        <input type="email" id="email" name="email" placeholder="Email" />
+        <input type="email" id="email" name="email" placeholder="Masukan Email" />
         <br />
         <label for="noHp">No Hp</label>
         <br />
-        <input type="number" id="noHp" name="noHp" placeholder="Masukan No HP Anda" />
+        <input type="number" id="noHp" name="noHp" placeholder="Masukan No HP" />
+        <br />
+        <label for="jk">Jenis Kelamin</label>
+        <br />
+        <input type="radio" id="jk" name="jk" placeholder="Jenis Kelamin" />
+        <label for="jk">Perempuan</label>
+        <br />
+        <input type="radio" id="jk" name="jk" placeholder="Jenis Kelamin" />
+        <label for="jk">Laki-Laki</label>
+
+        <br />
+        <label for="jurusan">Jurusan</label>
+        <br />
+        <select name="jurusan" id="jurusan">
+        <option value="informatika">Teknik Informatika</option>
+        <option value="sistemKomputer">Sistem Komputer</option>
+        <option value="rpl">Rekayasa Perangkat Lunak</option>
+        <option value="ilmuKomunikasi">Ilmu Komunikasi</option>
+      </select>
+        <br />
+        <br />
+        <label for="alamat">Alamat</label>
+        <br />
+        <textarea name="alamat" id="alamat" rows="5" cols="20" placeholder="Masukan Alamat"></textarea>
+        <br />
+        <label for="foto">Foto</label>
+        <br />
+        <input type="file" name="foto" id="foto" multiple />
+        <br />
+        <br />
+
+        <button type="Submit">Daftar</button>
     </form>
 </body>
 
