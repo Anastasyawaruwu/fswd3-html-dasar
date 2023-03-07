@@ -1,0 +1,65 @@
+.baris {
+    margin-top: 20px;
+}
+
+.judul {
+    text-align: center;
+    font-family: "Press Start 2P", cursive;
+    color: brown;
+    margin-bottom: 50px;
+}
+
+.judul span {
+    color: rgb(12, 187, 235);
+}
+
+.sub-judul {
+    text-align: center;
+    font-size: 12px;
+    color: rgb(8, 2, 2);
+    margin-bottom: 5px;
+}
+
+.card {
+    width: 200px;
+    height: 230px;
+    border-radius: 10px;
+    background-color: aqua;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    margin: 0 0 30px 37px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.card i {
+    font-size: 12px;
+    color: black;
+}
+
+.card img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.card-pink {
+    width: 130px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: rgb(249, 121, 208);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    margin: 0 0 30px 37px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.card-pink img {
+    width: 120px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.card-pink i {
+    font-size: 12px;
+    color: black;
+}
