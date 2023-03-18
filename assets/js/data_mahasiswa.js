@@ -1001,35 +1001,40 @@ let mahasiswa = [
     { id: 999, name: "Christeen Paris", gender: "M", score: 82 },
 ];
 
-var f = mahasiswa.filter((a) => a.gender == "F");
+var fem = mahasiswa.filter((element) => element.gender == "F");
 
-let m = mahasiswa.filter((a) => a.gender == "M");
+var mal = mahasiswa.filter((element) => element.gender == "M");
 
-let dataM = mahasiswa.map(getDataM);
+let totalfem = fem.reduce((val, element) => {
+    return val + element.score;
+}, 0);
 
-function getDataM(value, index, array) {
-    return value.name;
-}
-console.log(dataM);
+let totalmal = mal.reduce((val, element) => {
+    return val + element.score;
+}, 0);
 
-let data = {
-    famale: {
-        count: f.length,
-        Score: {
-            average: f.length,
-            max: f.length,
-            min: f.length,
+var scfem = fem.map((element) => element.score);
+var scmal = mal.map((element) => element.score);
+
+let hasil = {
+    female: {
+        count: fem.length,
+        score: {
+            average: totalfem / fem.length,
+            max: Math.max.apply(Math, scfem),
+            min: Math.min.apply(Math, scfem),
         },
-        students: f.length,
+        students: fem,
     },
     male: {
-        count: m.length,
-        Score: {
-            average: m.length,
-            max: m.length,
-            min: m.length,
+        count: mal.length,
+        score: {
+            average: totalmal / mal.length,
+            max: Math.max.apply(Math, scmal),
+            min: Math.min.apply(Math, scmal),
         },
+        students: mal,
     },
 };
 
-console.log(data);
+console.log(hasil);
